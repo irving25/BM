@@ -41,7 +41,7 @@ WebUI.click(findTestObject('Login/La parrilla login/input_Sign in_idSIButton9'))
 
 WebUI.click(findTestObject('Login/La parrilla login/input_Sign in_idSIButton9'))
 
-not_run: WebUI.delay(7)
+WebUI.delay(7)
 
-not_run: WebUI.verifyTextPresent('Irving', false)
+WebUI.verifyTextPresent('Irving', false)
 

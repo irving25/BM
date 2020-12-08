@@ -9,4 +9,19 @@
       <initValue>'https://mb-dev.firstmajestic.com/'</initValue>
       <name>url</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'LP-12-02'</initValue>
+      <name>Lote</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'200'</initValue>
+      <name>BInicial</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'250'</initValue>
+      <name>BFinal</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
