@@ -39,5 +39,5 @@ WebUI.click(findTestObject('Login/La parrilla login/input_Sign in_idSIButton9'))
 
 WebUI.click(findTestObject('Login/La parrilla login/input_Sign in_idSIButton9'))
 
-WebUI.delay(2)
+WebUI.verifyElementText(findTestObject('Login/La parrilla login/div_Bienvenido a Balance Metalrgico Irving'), 'Bienvenido a Balance Metalúrgico: Irving')
 

@@ -15,10 +15,10 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.testobject.ConditionType as ConditionType
 
-WebUI.callTestCase(findTestCase('Login/La Parrilla'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.delay(2, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Login/Log-in'), [('unidad') : 'San Dimas'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Catalogos/button_Catlogos'), FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -26,7 +26,22 @@ WebUI.click(findTestObject('Object Repository/Catalogos/Unidades/button_Unidades
 
 WebUI.click(findTestObject('Object Repository/Catalogos/Unidades/button_Unidad Minera'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.verifyCheckpoint(findCheckpoint('Checkpoints/Mining_unit'), true)
+for (def i = 1; i <= findTestData('Data Files/Catalogos/Unidades/Unidades mineras').getRowNumbers(); i++) {
+    TI = i.toString()
+    for (def j = 1; j <= findTestData('Data Files/Catalogos/Unidades/Unidades mineras').getColumnNumbers(); j++) {
+        TJ = j.toString()
+        String aux = ((('/html/body/div[1]/div/main/div/div/div/div[2]/div[3]/table/tbody/tr[' + TI) + ']/td[') + TJ) + ']'	
+        System.out.println(aux)
+
+        serial = new TestObject('customObject')
+        serial.addProperty('xpath', ConditionType.EQUALS, aux)
+		System.out.println(serial)
+        String test = WebUI.getText(serial)
+        System.out.println(test)
+
+        WebUI.verifyMatch(test, findTestData('Catalogos/Unidades/Unidades mineras').getValue(j, i), false)
+    }
+}
 
 WebUI.closeBrowser(FailureHandling.CONTINUE_ON_FAILURE)
 

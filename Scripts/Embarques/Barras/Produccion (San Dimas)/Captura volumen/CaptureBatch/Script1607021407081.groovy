@@ -78,15 +78,12 @@ for (def rowNum = 1; rowNum <= findTestData('Data Files/Embarques/Embarque1').ge
 
     for (def barras = 1; barras <= findTestData('Data Files/Embarques/Barras1').getRowNumbers(); barras++) {
         String aux = ('/html/body/div[1]/div/main/div/div/div/div[2]/div[5]/div[' + (barras * 3)) + ']/div/input'
-
         String aux1 = ('/html/body/div[1]/div/main/div/div/div/div[2]/div[5]/div[' + ((barras * 3) + 1)) + ']/div/input'
 
         serial = new TestObject('customObject')
-
         serial.addProperty('xpath', ConditionType.EQUALS, aux)
-
+		
         peso = new TestObject('customObject')
-
         peso.addProperty('xpath', ConditionType.EQUALS, aux1)
 
         WebUI.setText(serial, findTestData('Data Files/Embarques/Barras1').getValue(1, barras), FailureHandling.CONTINUE_ON_FAILURE)

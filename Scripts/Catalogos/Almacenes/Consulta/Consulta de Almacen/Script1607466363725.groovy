@@ -16,28 +16,20 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser(GlobalVariable.url)
+WebUI.callTestCase(findTestCase('Login/Log-in'), [('unidad') : 'San Dimas'], FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.maximizeWindow()
+WebUI.click(findTestObject('Object Repository/Catalogos/Almacenes/Consulta/button_Catlogos'))
 
-WebUI.click(findTestObject('Login/La parrilla login/select_Seleccionar UnidadLa ParrillaLa Enca_3f6097'))
+WebUI.click(findTestObject('Object Repository/Catalogos/Almacenes/Consulta/button_Almacenes'))
 
-WebUI.selectOptionByLabel(findTestObject('Login/La parrilla login/select_Seleccionar UnidadLa ParrillaLa Enca_3f6097'), 
-    'Santa Elena', false)
+WebUI.click(findTestObject('Object Repository/Catalogos/Almacenes/Consulta/button_Consulta'))
 
-WebUI.click(findTestObject('Login/La parrilla login/button_Iniciar Sesin'))
+WebUI.selectOptionByLabel(findTestObject('Object Repository/Catalogos/Almacenes/Consulta/select_-Trafigura Mexico Sa de CvMk Metal T_241530'), 
+    Almacen, false)
 
-WebUI.click(findTestObject('Login/La parrilla login/input_Sign in with your corporate ID_btn bt_b79ff6'))
+WebUI.click(findTestObject('Object Repository/Catalogos/Almacenes/Consulta/button_Consultar'))
 
-WebUI.setText(findTestObject('Login/La parrilla login/input_Sign in_loginfmt'), 'iperez@firstmajestic.com')
+WebUI.verifyElementText(findTestObject('Catalogos/Almacenes/Consulta/Validacion'), Almacen)
 
-WebUI.click(findTestObject('Login/La parrilla login/input_Sign in_idSIButton9'))
-
-WebUI.setEncryptedText(findTestObject('Login/La parrilla login/input_Enter password_passwd'), 'ykGCkDCd7AS2UCfUpOmvYw==')
-
-WebUI.click(findTestObject('Login/La parrilla login/input_Sign in_idSIButton9'))
-
-WebUI.click(findTestObject('Login/La parrilla login/input_Sign in_idSIButton9'))
-
-not_run: WebUI.delay(8)
+WebUI.closeBrowser()
 
