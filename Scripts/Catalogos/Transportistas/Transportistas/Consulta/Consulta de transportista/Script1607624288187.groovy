@@ -23,27 +23,15 @@ WebUI.click(findTestObject('Catalogos/Transportistas/Transportistas/Transpor'), 
 
 WebUI.click(findTestObject('Catalogos/Transportistas/Transportistas/Transpor_2'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Catalogos/Transportistas/Transportistas/Btn_capturaT'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Catalogos/Transportistas/Transportistas/Btn_consultaC'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.setText(findTestObject('Catalogos/Transportistas/Transportistas/razon_social'), razon_s, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.scrollToElement(findTestObject('Catalogos/Transportistas/Transportistas/Next_transpor'), 1)
 
-WebUI.setText(findTestObject('Catalogos/Transportistas/Transportistas/contrato'), contrato, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyTextPresent('Guadiana Tec. S.A.P.I, Cv & Asociados', false)
 
-WebUI.click(findTestObject('Catalogos/Transportistas/Transportistas/Date/fecha'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Catalogos/Transportistas/Transportistas/Next_transpor'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Catalogos/Transportistas/Transportistas/Date/year'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyTextPresent('Javier Elguezabal Elguezabal', false)
 
-WebUI.click(findTestObject('Catalogos/Transportistas/Transportistas/Date/Year2025'), FailureHandling.CONTINUE_ON_FAILURE)
-
-WebUI.click(findTestObject('Catalogos/Transportistas/Transportistas/Date/month'), FailureHandling.CONTINUE_ON_FAILURE)
-
-WebUI.click(findTestObject('Catalogos/Transportistas/Transportistas/Date/december'), FailureHandling.CONTINUE_ON_FAILURE)
-
-WebUI.click(findTestObject('Catalogos/Transportistas/Transportistas/Date/31December'), FailureHandling.CONTINUE_ON_FAILURE)
-
-WebUI.delay(2)
-
-WebUI.click(findTestObject('Catalogos/Transportistas/Transportistas/Aceptar'), FailureHandling.CONTINUE_ON_FAILURE)
-
-WebUI.closeBrowser(FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.closeBrowser()
 

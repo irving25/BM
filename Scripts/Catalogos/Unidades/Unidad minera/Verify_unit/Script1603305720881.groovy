@@ -35,6 +35,7 @@ for (def i = 1; i <= findTestData('Data Files/Catalogos/Unidades/Unidades minera
 
         serial = new TestObject('customObject')
         serial.addProperty('xpath', ConditionType.EQUALS, aux)
+		
 		System.out.println(serial)
         String test = WebUI.getText(serial)
         System.out.println(test)

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description></description>
+   <name>Transportista</name>
+   <tag></tag>
+   <isRerun>false</isRerun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>0</numberOfRerun>
+   <pageLoadTimeout>30</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <testSuiteGuid>bced98b0-04d9-478e-a089-6817dd56bebf</testSuiteGuid>
+   <testCaseLink>
+      <guid>7e5408a2-578f-46a7-ae5d-d9db75198844</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Catalogos/Transportistas/Transportistas/Captura/Create_transpor</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>501a9216-f714-4039-981f-33a8a94a6195</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/Catalogos/Transportistas/Transportista</testDataId>
+      </testDataLink>
+      <variableLink>
+         <testDataLinkId>501a9216-f714-4039-981f-33a8a94a6195</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>razon</value>
+         <variableId>83217144-9cf7-4a39-be1c-778f779e6859</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>501a9216-f714-4039-981f-33a8a94a6195</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>contrato</value>
+         <variableId>73ba6f43-ea30-49df-9b8e-5ce8a2be633b</variableId>
+      </variableLink>
+   </testCaseLink>
+</TestSuiteEntity>
