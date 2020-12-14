@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>button_Iniciar Sesin</name>
+   <name>button_Iniciar Sesion</name>
    <tag></tag>
-   <elementGuidId>6e42b755-b6de-45d1-96af-8f462008c3dd</elementGuidId>
+   <elementGuidId>5e4f83da-6e87-4cb7-801d-59671809b4bd</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

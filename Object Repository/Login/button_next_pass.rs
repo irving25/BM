@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_Sign in_idSIButton9</name>
+   <name>button_next_pass</name>
    <tag></tag>
-   <elementGuidId>26b05dd3-d81e-405f-bd1d-772e247022a7</elementGuidId>
+   <elementGuidId>46f207b7-934a-4a82-9d46-0818771da466</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
@@ -62,7 +62,7 @@
       <matchCondition>equals</matchCondition>
       <name>value</name>
       <type>Main</type>
-      <value>Next</value>
+      <value>Sign in</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -83,14 +83,21 @@
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//form[@id='i0281']/div/div/div/div[2]/div[2]/div/div/div/div[4]/div/div/div/div[2]/input</value>
+      <value>//form[@id='i0281']/div/div/div/div[2]/div[2]/div/div[2]/div/div[3]/div[2]/div/div/div/div/input</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Sign in'])[1]/following::input[4]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Forgot my password'])[1]/following::input[1]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Enter password'])[1]/following::input[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -111,6 +118,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div/div/div/div[2]/input</value>
+      <value>//div[3]/div[2]/div/div/div/div/input</value>
    </webElementXpaths>
 </WebElementEntity>

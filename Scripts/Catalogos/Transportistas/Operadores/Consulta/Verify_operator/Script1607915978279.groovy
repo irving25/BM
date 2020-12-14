@@ -29,10 +29,8 @@ WebUI.click(findTestObject('Catalogos/Transportistas/Operator/Btn_consulta'), Fa
 
 for (def i = 1; i <= findTestData('Data Files/Catalogos/Transportistas/Operador_verify').getRowNumbers(); i++) {
     TI = i.toString()
-
     for (def j = 1; j <= findTestData('Data Files/Catalogos/Transportistas/Operador_verify').getColumnNumbers(); j++) {
         TJ = j.toString()
-
         String aux = ((('/html/body/div[1]/div/main/div/div/div/div[2]/div[4]/table/tbody/tr[' + TI) + ']/td[') + TJ) + 
         ']'
 		System.out.println(aux);
@@ -44,15 +42,13 @@ for (def i = 1; i <= findTestData('Data Files/Catalogos/Transportistas/Operador_
         String test = WebUI.getText(serial)
 
         WebUI.scrollToElement(findTestObject('Catalogos/Transportistas/Operator/btn_next'), 0)
-
         WebUI.verifyMatch(test, findTestData('Catalogos/Transportistas/Operador_verify').getValue(j, i), false)
-		
     }
     	if ((i % 10) == 0) {
 			WebUI.click(findTestObject('Catalogos/Transportistas/Operator/btn_next'), FailureHandling.CONTINUE_ON_FAILURE)
+			i = 0;
+			j = 0;
 		}
-			i = "0";
-			j = "0";
 }
 
 WebUI.closeBrowser(FailureHandling.CONTINUE_ON_FAILURE)

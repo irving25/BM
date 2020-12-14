@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_Sign in with your corporate ID_btn bt_b79ff6</name>
+   <name>button_fms-domain</name>
    <tag></tag>
-   <elementGuidId>7674226f-09b1-4649-8736-a66929bd7786</elementGuidId>
+   <elementGuidId>7401b4e5-1124-49fb-9d3b-02e5c85f3917</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
