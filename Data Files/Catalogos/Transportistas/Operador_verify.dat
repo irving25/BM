@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <DataFileEntity>
    <description></description>
-   <name>Operadores</name>
+   <name>Operador_verify</name>
    <tag></tag>
    <containsHeaders>true</containsHeaders>
    <csvSeperator></csvSeperator>
-   <dataFileGUID>f975ef0b-4e34-45fb-8f19-8d612edc4619</dataFileGUID>
+   <dataFileGUID>3c1b8a6e-12d3-4671-a251-75ef0687eccd</dataFileGUID>
    <dataSourceUrl>D:\Users\iperez\Documents\Datos de prueba\Catalogos\Transportistas\Transportistas.xls</dataSourceUrl>
    <driver>ExcelFile</driver>
    <isInternalPath>false</isInternalPath>
    <query></query>
    <secureUserAccount>false</secureUserAccount>
-   <sheetName>Operador</sheetName>
+   <sheetName>Operador_fecha</sheetName>
    <usingGlobalDBSetting>false</usingGlobalDBSetting>
 </DataFileEntity>

@@ -17669,4 +17669,171 @@
   <message>End Test Suite : Test Suites/Catalogos/Transportistas/Transportista</message>
   <nestedLevel>0</nestedLevel>
 </record>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<record>
+  <date>2020-12-10T13:39:03</date>
+  <millis>1607629143897</millis>
+  <sequence>1900</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Finding test data with id &amp;apos;Data Files/Catalogos/Transportistas/Operadores&amp;apos;</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-12-10T13:39:03</date>
+  <millis>1607629143919</millis>
+  <sequence>1901</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Test data is excel file, reading excel file</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-12-10T13:39:03</date>
+  <millis>1607629143919</millis>
+  <sequence>1902</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Reading excel file with source file &amp;apos;D:\\Users\\iperez\\Documents\\Datos de prueba\\Catalogos\\Transportistas\\Transportistas.xls&amp;apos; and sheet name &amp;apos;Operador&amp;apos;</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-12-10T13:39:59</date>
+  <millis>1607629199516</millis>
+  <sequence>1903</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Finding test data with id &amp;apos;Data Files/Catalogos/Transportistas/Operadores&amp;apos;</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-12-10T13:39:59</date>
+  <millis>1607629199516</millis>
+  <sequence>1904</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Test data is excel file, reading excel file</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-12-10T13:39:59</date>
+  <millis>1607629199516</millis>
+  <sequence>1905</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Reading excel file with source file &amp;apos;D:\\Users\\iperez\\Documents\\Datos de prueba\\Catalogos\\Transportistas\\Transportistas.xls&amp;apos; and sheet name &amp;apos;Operador&amp;apos;</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-12-10T13:40:03</date>
+  <millis>1607629203369</millis>
+  <sequence>1906</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Finding test data with id &amp;apos;Data Files/Catalogos/Transportistas/Operadores&amp;apos;</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-12-10T13:40:03</date>
+  <millis>1607629203385</millis>
+  <sequence>1907</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Test data is excel file, reading excel file</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-12-10T13:40:03</date>
+  <millis>1607629203385</millis>
+  <sequence>1908</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Reading excel file with source file &amp;apos;D:\\Users\\iperez\\Documents\\Datos de prueba\\Catalogos\\Transportistas\\Transportistas.xls&amp;apos; and sheet name &amp;apos;Operador&amp;apos;</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-12-10T13:40:07</date>
+  <millis>1607629207511</millis>
+  <sequence>1909</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Finding test data with id &amp;apos;Data Files/Catalogos/Transportistas/Operadores&amp;apos;</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-12-10T13:40:07</date>
+  <millis>1607629207511</millis>
+  <sequence>1910</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Test data is excel file, reading excel file</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-12-10T13:40:07</date>
+  <millis>1607629207511</millis>
+  <sequence>1911</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Reading excel file with source file &amp;apos;D:\\Users\\iperez\\Documents\\Datos de prueba\\Catalogos\\Transportistas\\Transportistas.xls&amp;apos; and sheet name &amp;apos;Operador&amp;apos;</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-12-10T13:40:10</date>
+  <millis>1607629210791</millis>
+  <sequence>1912</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Finding test data with id &amp;apos;Data Files/Catalogos/Transportistas/Operadores&amp;apos;</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-12-10T13:40:10</date>
+  <millis>1607629210791</millis>
+  <sequence>1913</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Test data is excel file, reading excel file</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-12-10T13:40:10</date>
+  <millis>1607629210791</millis>
+  <sequence>1914</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Reading excel file with source file &amp;apos;D:\\Users\\iperez\\Documents\\Datos de prueba\\Catalogos\\Transportistas\\Transportistas.xls&amp;apos; and sheet name &amp;apos;Operador&amp;apos;</message>
+  <nestedLevel>0</nestedLevel>
+</record>
 </log>

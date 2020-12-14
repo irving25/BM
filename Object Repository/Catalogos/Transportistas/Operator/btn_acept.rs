@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Transportadora</name>
+   <name>btn_acept</name>
    <tag></tag>
-   <elementGuidId>ebc049f5-ada2-4d08-9dea-81c4b7222b95</elementGuidId>
+   <elementGuidId>c5a92a34-fc41-4394-8df1-40ce495a4615</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>/html/body/div[1]/div/div[1]/div/div/div[2]/div[2]/button</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//*[@id=&quot;root&quot;]/div/main/div/div/div/form/div[2]/div[1]/div/div/select</value>
+         <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -16,9 +16,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('null'), [:], FailureHandling.CONTINUE_ON_FAILURE)
-
-WebUI.delay(2, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Login/Log-in'), [('unidad') : 'San Dimas'], FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.click(findTestObject('Catalogos/button_Catlogos'), FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -28,27 +26,41 @@ WebUI.click(findTestObject('Catalogos/Transportistas/Operator/Operador'), Failur
 
 WebUI.click(findTestObject('Catalogos/Transportistas/Operator/Btn_capturaO'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.selectOptionByLabel(findTestObject('Catalogos/Transportistas/Operator/Transportadora'), transportador, false)
+for (def rowNum = 718; rowNum <= findTestData('Data Files/Catalogos/Transportistas/Operadores').getRowNumbers(); rowNum++) {
+    WebUI.selectOptionByLabel(findTestObject('Catalogos/Transportistas/Operator/Transportadora'), findTestData('Data Files/Catalogos/Transportistas/Operadores').getValue(
+            1, rowNum), false, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.setText(findTestObject('Catalogos/Transportistas/Operator/Nombre'), nombre, FailureHandling.CONTINUE_ON_FAILURE)
+    WebUI.setText(findTestObject('Catalogos/Transportistas/Operator/Nombre'), findTestData('Data Files/Catalogos/Transportistas/Operadores').getValue(
+            2, rowNum), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.setText(findTestObject('Catalogos/Transportistas/Operator/Licencia'), licencia, FailureHandling.CONTINUE_ON_FAILURE)
+    WebUI.setText(findTestObject('Catalogos/Transportistas/Operator/Licencia'), findTestData('Data Files/Catalogos/Transportistas/Operadores').getValue(
+            3, rowNum), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Catalogos/Transportistas/Operator/Date/input_Vigencia Licencia_Fecha'))
+    WebUI.click(findTestObject('Catalogos/Transportistas/Operator/Date/input_Vigencia Licencia_Fecha'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Catalogos/Transportistas/Operator/Date/span_octubre_react-datepicker__year-read-vi_094b71'))
+    WebUI.click(findTestObject('Catalogos/Transportistas/Operator/Date/span_octubre_react-datepicker__year-read-vi_094b71'), 
+        FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Catalogos/Transportistas/Operator/Date/div_2025'))
+    WebUI.click(findTestObject('Catalogos/Transportistas/Operator/Date/div_2025'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Catalogos/Transportistas/Operator/Date/span_octubre 2025_react-datepicker__month-r_2a1220'))
+    WebUI.click(findTestObject('Catalogos/Transportistas/Operator/Date/span_octubre 2025_react-datepicker__month-r_2a1220'), 
+        FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Catalogos/Transportistas/Operator/Date/div_diciembre'))
+    WebUI.click(findTestObject('Catalogos/Transportistas/Operator/Date/div_diciembre'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Catalogos/Transportistas/Operator/Date/div_31'))
+    WebUI.click(findTestObject('Catalogos/Transportistas/Operator/Date/div_31'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.setText(findTestObject('Catalogos/Transportistas/Operator/Date/input_Numero IMSS_imss'), imss)
+    WebUI.setText(findTestObject('Catalogos/Transportistas/Operator/Date/input_Numero IMSS_imss'), findTestData('Data Files/Catalogos/Transportistas/Operadores').getValue(
+            4, rowNum), FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: WebUI.click(findTestObject('Catalogos/Transportistas/Transportistas/Aceptar'), FailureHandling.CONTINUE_ON_FAILURE)
+    WebUI.click(findTestObject('Catalogos/Transportistas/Operator/Guardar'), FailureHandling.CONTINUE_ON_FAILURE)
+
+    if (WebUI.verifyElementPresent(findTestObject('Catalogos/Error de registro'), 1)) {
+        WebUI.click(findTestObject('Object Repository/Catalogos/CerrarError'))
+    } else {
+        WebUI.click(findTestObject('Catalogos/Transportistas/Operator/btn_acept'), FailureHandling.CONTINUE_ON_FAILURE)
+    }
+}
 
 WebUI.closeBrowser(FailureHandling.CONTINUE_ON_FAILURE)
 

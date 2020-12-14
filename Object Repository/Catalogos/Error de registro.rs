@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Transportadora</name>
+   <name>Error de registro</name>
    <tag></tag>
-   <elementGuidId>ebc049f5-ada2-4d08-9dea-81c4b7222b95</elementGuidId>
+   <elementGuidId>7f1dd589-4829-439b-94cc-0dadee7a3a27</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//*[@id=&quot;root&quot;]/div/main/div/div/div/form/div[2]/div[1]/div/div/select</value>
+         <value>/html/body/div[1]/div/main/div/div/div/form/div[5]/div/div[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
