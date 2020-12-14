@@ -17,6 +17,3 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Login/Log-in'), [('unidad') : 'San Dimas'], FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Catalogos/Unidades/Unidad minera/Verify_unit'), [('razonS') : '', ('nombre') : '', ('nombreC') : ''
-        , ('sap') : 0], FailureHandling.CONTINUE_ON_FAILURE)
-
