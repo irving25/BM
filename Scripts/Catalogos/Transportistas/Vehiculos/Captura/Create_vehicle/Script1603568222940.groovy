@@ -16,9 +16,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('null'), [:], FailureHandling.CONTINUE_ON_FAILURE)
-
-WebUI.delay(2, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Login/Log-in'), [('unidad') : 'San Dimas'], FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.click(findTestObject('Object Repository/Catalogos/Transportistas/Vehiculo/button_Catlogos'))
 
@@ -28,43 +26,57 @@ WebUI.click(findTestObject('Object Repository/Catalogos/Transportistas/Vehiculo/
 
 WebUI.click(findTestObject('Object Repository/Catalogos/Transportistas/Vehiculo/button_Captura'))
 
+for (def i = 1; i <= findTestData('Catalogos/Transportistas/Vehiculos').setProperty('', ''); i++) {
+   
 WebUI.selectOptionByLabel(findTestObject('Object Repository/Catalogos/Transportistas/Vehiculo/select_Seleccionar TransportistaUshipAusenc_0612e0'), 
-    transportador, true)
+        findTestData('Data Files/Catalogos/Transportistas/Vehiculos').getValue(1, i), false, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.setText(findTestObject('Object Repository/Catalogos/Transportistas/Vehiculo/input_Nmero Unidad_unitNumber'), unidad)
+    WebUI.setText(findTestObject('Object Repository/Catalogos/Transportistas/Vehiculo/input_Nmero Unidad_unitNumber'), 
+		findTestData('Data Files/Catalogos/Transportistas/Vehiculos').getValue(2, i), false, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.setText(findTestObject('Object Repository/Catalogos/Transportistas/Vehiculo/input_Tipo_type'), tipo)
+    WebUI.setText(findTestObject('Object Repository/Catalogos/Transportistas/Vehiculo/input_Tipo_type'), 
+		findTestData('Data Files/Catalogos/Transportistas/Vehiculos').getValue(3, i), false, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.setText(findTestObject('Object Repository/Catalogos/Transportistas/Vehiculo/input_Nmero Placas_platesNumber'), placas)
+    WebUI.setText(findTestObject('Object Repository/Catalogos/Transportistas/Vehiculo/input_Nmero Placas_platesNumber'), 
+        findTestData('Data Files/Catalogos/Transportistas/Vehiculos').getValue(4, i), false, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Object Repository/Catalogos/Transportistas/Vehiculo/input_Vigencia Placas_Fecha'))
+    WebUI.click(findTestObject('Object Repository/Catalogos/Transportistas/Vehiculo/input_Vigencia Placas_Fecha'))
 
-WebUI.click(findTestObject('Catalogos/Transportistas/Vehiculo/div_2020'))
+    WebUI.click(findTestObject('Catalogos/Transportistas/Vehiculo/div_2020'))
 
-WebUI.click(findTestObject('Catalogos/Transportistas/Vehiculo/div_2025'))
+    WebUI.click(findTestObject('Catalogos/Transportistas/Vehiculo/div_2025'))
 
-WebUI.click(findTestObject('Object Repository/Catalogos/Transportistas/Vehiculo/span_octubre'))
+    WebUI.click(findTestObject('Object Repository/Catalogos/Transportistas/Vehiculo/span_octubre'))
 
-WebUI.click(findTestObject('Object Repository/Catalogos/Transportistas/Vehiculo/div_diciembre'))
+    WebUI.click(findTestObject('Object Repository/Catalogos/Transportistas/Vehiculo/div_diciembre'))
 
-WebUI.click(findTestObject('Object Repository/Catalogos/Transportistas/Vehiculo/div_31'))
+    WebUI.click(findTestObject('Object Repository/Catalogos/Transportistas/Vehiculo/div_31'))
 
-WebUI.setText(findTestObject('Object Repository/Catalogos/Transportistas/Vehiculo/input_Aseguradora_insuranceCarrier'), 
-    aseguradora)
+    WebUI.setText(findTestObject('Object Repository/Catalogos/Transportistas/Vehiculo/input_Aseguradora_insuranceCarrier'), 
+        findTestData('Data Files/Catalogos/Transportistas/Vehiculos').getValue(5, i), false, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.setText(findTestObject('Object Repository/Catalogos/Transportistas/Vehiculo/input_Poliza_policy'), 'dsfh4356')
+    WebUI.setText(findTestObject('Object Repository/Catalogos/Transportistas/Vehiculo/input_Poliza_policy'), 'dsfh4356')
 
-WebUI.click(findTestObject('Object Repository/Catalogos/Transportistas/Vehiculo/input_Vigencia Poliza_Fecha'))
+    WebUI.click(findTestObject('Object Repository/Catalogos/Transportistas/Vehiculo/input_Vigencia Poliza_Fecha'))
 
-WebUI.click(findTestObject('Object Repository/Catalogos/Transportistas/Vehiculo/span_2020'))
+    WebUI.click(findTestObject('Object Repository/Catalogos/Transportistas/Vehiculo/span_2020'))
 
-WebUI.click(findTestObject('Catalogos/Transportistas/Vehiculo/div_2025Do'))
+    WebUI.click(findTestObject('Catalogos/Transportistas/Vehiculo/div_2025Do'))
 
-WebUI.click(findTestObject('Catalogos/Transportistas/Vehiculo/span_octubreDo'))
+    WebUI.click(findTestObject('Catalogos/Transportistas/Vehiculo/span_octubreDo'))
 
-WebUI.click(findTestObject('Catalogos/Transportistas/Vehiculo/div_diciembreDo'))
+    WebUI.click(findTestObject('Catalogos/Transportistas/Vehiculo/div_diciembreDo'))
 
-WebUI.click(findTestObject('Catalogos/Transportistas/Vehiculo/div_31Do'))
+    WebUI.click(findTestObject('Catalogos/Transportistas/Vehiculo/div_31Do'))
 
-WebUI.closeBrowser()
+    not_run: WebUI.click(findTestObject('Catalogos/Transportistas/Vehiculo/btn_gurdar_vehi'))
+
+    if (WebUI.verifyElementPresent(findTestObject('Catalogos/Error de registro'), 1)) {
+        WebUI.click(findTestObject('Object Repository/Catalogos/CerrarError'))
+    } else {
+        WebUI.click(findTestObject('Catalogos/Transportistas/Operator/btn_acept'), FailureHandling.CONTINUE_ON_FAILURE)
+    }
+}
+
+not_run: WebUI.closeBrowser()
 

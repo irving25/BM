@@ -26,15 +26,15 @@ WebUI.click(findTestObject('Catalogos/Transportistas/Operator/Operador'), Failur
 
 WebUI.click(findTestObject('Catalogos/Transportistas/Operator/Btn_capturaO'), FailureHandling.CONTINUE_ON_FAILURE)
 
-for (def rowNum = 718; rowNum <= findTestData('Data Files/Catalogos/Transportistas/Operadores').getRowNumbers(); rowNum++) {
+for (def i = 1; i <= findTestData('Data Files/Catalogos/Transportistas/Operadores').getRowNumbers(); i++) {
     WebUI.selectOptionByLabel(findTestObject('Catalogos/Transportistas/Operator/Transportadora'), findTestData('Data Files/Catalogos/Transportistas/Operadores').getValue(
-            1, rowNum), false, FailureHandling.CONTINUE_ON_FAILURE)
+            1, i), false, FailureHandling.CONTINUE_ON_FAILURE)
 
     WebUI.setText(findTestObject('Catalogos/Transportistas/Operator/Nombre'), findTestData('Data Files/Catalogos/Transportistas/Operadores').getValue(
-            2, rowNum), FailureHandling.CONTINUE_ON_FAILURE)
+            2, i), FailureHandling.CONTINUE_ON_FAILURE)
 
     WebUI.setText(findTestObject('Catalogos/Transportistas/Operator/Licencia'), findTestData('Data Files/Catalogos/Transportistas/Operadores').getValue(
-            3, rowNum), FailureHandling.CONTINUE_ON_FAILURE)
+            3, i), FailureHandling.CONTINUE_ON_FAILURE)
 
     WebUI.click(findTestObject('Catalogos/Transportistas/Operator/Date/input_Vigencia Licencia_Fecha'), FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -51,7 +51,7 @@ for (def rowNum = 718; rowNum <= findTestData('Data Files/Catalogos/Transportist
     WebUI.click(findTestObject('Catalogos/Transportistas/Operator/Date/div_31'), FailureHandling.CONTINUE_ON_FAILURE)
 
     WebUI.setText(findTestObject('Catalogos/Transportistas/Operator/Date/input_Numero IMSS_imss'), findTestData('Data Files/Catalogos/Transportistas/Operadores').getValue(
-            4, rowNum), FailureHandling.CONTINUE_ON_FAILURE)
+            4, i), FailureHandling.CONTINUE_ON_FAILURE)
 
     WebUI.click(findTestObject('Catalogos/Transportistas/Operator/Guardar'), FailureHandling.CONTINUE_ON_FAILURE)
 
