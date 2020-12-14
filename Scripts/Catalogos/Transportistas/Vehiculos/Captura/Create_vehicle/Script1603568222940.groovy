@@ -26,7 +26,7 @@ WebUI.click(findTestObject('Object Repository/Catalogos/Transportistas/Vehiculo/
 
 WebUI.click(findTestObject('Object Repository/Catalogos/Transportistas/Vehiculo/button_Captura'))
 
-for (def i = 1; i <= findTestData('Catalogos/Transportistas/Vehiculos').setProperty('', ''); i++) {
+for (def i = 1; i <= findTestData('Catalogos/Transportistas/Vehiculos').getRowNumbers(); i++) {
    
 WebUI.selectOptionByLabel(findTestObject('Object Repository/Catalogos/Transportistas/Vehiculo/select_Seleccionar TransportistaUshipAusenc_0612e0'), 
         findTestData('Data Files/Catalogos/Transportistas/Vehiculos').getValue(1, i), false, FailureHandling.CONTINUE_ON_FAILURE)
