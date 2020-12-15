@@ -26,19 +26,18 @@ WebUI.click(findTestObject('Object Repository/Catalogos/Transportistas/Vehiculo/
 
 WebUI.click(findTestObject('Object Repository/Catalogos/Transportistas/Vehiculo/button_Captura'))
 
-for (def i = 1; i <= findTestData('Catalogos/Transportistas/Vehiculos').getRowNumbers(); i++) {
-   
-WebUI.selectOptionByLabel(findTestObject('Object Repository/Catalogos/Transportistas/Vehiculo/select_Seleccionar TransportistaUshipAusenc_0612e0'), 
+for (def i = 326; i <= findTestData('Data Files/Catalogos/Transportistas/Vehiculos').getRowNumbers(); i++) {
+    WebUI.selectOptionByLabel(findTestObject('Object Repository/Catalogos/Transportistas/Vehiculo/select_Seleccionar TransportistaUshipAusenc_0612e0'), 
         findTestData('Data Files/Catalogos/Transportistas/Vehiculos').getValue(1, i), false, FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.setText(findTestObject('Object Repository/Catalogos/Transportistas/Vehiculo/input_Nmero Unidad_unitNumber'), 
-		findTestData('Data Files/Catalogos/Transportistas/Vehiculos').getValue(2, i), false, FailureHandling.CONTINUE_ON_FAILURE)
+    WebUI.setText(findTestObject('Object Repository/Catalogos/Transportistas/Vehiculo/input_Nmero Unidad_unitNumber'), findTestData(
+            'Data Files/Catalogos/Transportistas/Vehiculos').getValue(2, i), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.setText(findTestObject('Object Repository/Catalogos/Transportistas/Vehiculo/input_Tipo_type'), 
-		findTestData('Data Files/Catalogos/Transportistas/Vehiculos').getValue(3, i), false, FailureHandling.CONTINUE_ON_FAILURE)
+    WebUI.setText(findTestObject('Object Repository/Catalogos/Transportistas/Vehiculo/input_Tipo_type'), findTestData('Data Files/Catalogos/Transportistas/Vehiculos').getValue(
+            3, i), FailureHandling.CONTINUE_ON_FAILURE)
 
     WebUI.setText(findTestObject('Object Repository/Catalogos/Transportistas/Vehiculo/input_Nmero Placas_platesNumber'), 
-        findTestData('Data Files/Catalogos/Transportistas/Vehiculos').getValue(4, i), false, FailureHandling.CONTINUE_ON_FAILURE)
+        findTestData('Data Files/Catalogos/Transportistas/Vehiculos').getValue(4, i), FailureHandling.CONTINUE_ON_FAILURE)
 
     WebUI.click(findTestObject('Object Repository/Catalogos/Transportistas/Vehiculo/input_Vigencia Placas_Fecha'))
 
@@ -53,9 +52,10 @@ WebUI.selectOptionByLabel(findTestObject('Object Repository/Catalogos/Transporti
     WebUI.click(findTestObject('Object Repository/Catalogos/Transportistas/Vehiculo/div_31'))
 
     WebUI.setText(findTestObject('Object Repository/Catalogos/Transportistas/Vehiculo/input_Aseguradora_insuranceCarrier'), 
-        findTestData('Data Files/Catalogos/Transportistas/Vehiculos').getValue(5, i), false, FailureHandling.CONTINUE_ON_FAILURE)
+        findTestData('Data Files/Catalogos/Transportistas/Vehiculos').getValue(5, i), FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.setText(findTestObject('Object Repository/Catalogos/Transportistas/Vehiculo/input_Poliza_policy'), 'dsfh4356')
+    WebUI.setText(findTestObject('Object Repository/Catalogos/Transportistas/Vehiculo/input_Poliza_policy'), findTestData(
+            'Data Files/Catalogos/Transportistas/Vehiculos').getValue(6, i), FailureHandling.CONTINUE_ON_FAILURE)
 
     WebUI.click(findTestObject('Object Repository/Catalogos/Transportistas/Vehiculo/input_Vigencia Poliza_Fecha'))
 
@@ -69,10 +69,10 @@ WebUI.selectOptionByLabel(findTestObject('Object Repository/Catalogos/Transporti
 
     WebUI.click(findTestObject('Catalogos/Transportistas/Vehiculo/div_31Do'))
 
-    not_run: WebUI.click(findTestObject('Catalogos/Transportistas/Vehiculo/btn_gurdar_vehi'))
+    WebUI.click(findTestObject('Catalogos/Transportistas/Vehiculo/btn_gurdar_vehi'))
 
-    if (WebUI.verifyElementPresent(findTestObject('Catalogos/Error de registro'), 1)) {
-        WebUI.click(findTestObject('Object Repository/Catalogos/CerrarError'))
+    if (WebUI.verifyElementPresent(findTestObject('Catalogos/Transportistas/Vehiculo/MensajeError'), 1)) {
+        WebUI.click(findTestObject('Catalogos/Transportistas/Vehiculo/CerrarError'))
     } else {
         WebUI.click(findTestObject('Catalogos/Transportistas/Operator/btn_acept'), FailureHandling.CONTINUE_ON_FAILURE)
     }

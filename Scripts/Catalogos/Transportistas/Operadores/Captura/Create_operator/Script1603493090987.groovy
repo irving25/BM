@@ -27,8 +27,8 @@ WebUI.click(findTestObject('Catalogos/Transportistas/Operator/Operador'), Failur
 WebUI.click(findTestObject('Catalogos/Transportistas/Operator/Btn_capturaO'), FailureHandling.CONTINUE_ON_FAILURE)
 
 for (def i = 1; i <= findTestData('Data Files/Catalogos/Transportistas/Operadores').getRowNumbers(); i++) {
-    WebUI.selectOptionByLabel(findTestObject('Catalogos/Transportistas/Operator/Transportadora'), findTestData('Data Files/Catalogos/Transportistas/Operadores').getValue(
-            1, i), false, FailureHandling.CONTINUE_ON_FAILURE)
+    WebUI.selectOptionByLabel(findTestObject('Catalogos/Transportistas/Operator/Transportadora'), 
+		findTestData('Data Files/Catalogos/Transportistas/Operadores').getValue(1, i), false, FailureHandling.CONTINUE_ON_FAILURE)
 
     WebUI.setText(findTestObject('Catalogos/Transportistas/Operator/Nombre'), findTestData('Data Files/Catalogos/Transportistas/Operadores').getValue(
             2, i), FailureHandling.CONTINUE_ON_FAILURE)
@@ -55,8 +55,8 @@ for (def i = 1; i <= findTestData('Data Files/Catalogos/Transportistas/Operadore
 
     WebUI.click(findTestObject('Catalogos/Transportistas/Operator/Guardar'), FailureHandling.CONTINUE_ON_FAILURE)
 
-    if (WebUI.verifyElementPresent(findTestObject('Catalogos/Error de registro'), 1)) {
-        WebUI.click(findTestObject('Object Repository/Catalogos/CerrarError'))
+    if (WebUI.verifyElementPresent(findTestObject('Catalogos/Transportistas/Operator/Error de registro'), 1)) {
+        WebUI.click(findTestObject('Catalogos/Transportistas/Operator/CerrarError'))
     } else {
         WebUI.click(findTestObject('Catalogos/Transportistas/Operator/btn_acept'), FailureHandling.CONTINUE_ON_FAILURE)
     }
