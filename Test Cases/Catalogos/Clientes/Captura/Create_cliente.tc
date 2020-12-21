@@ -104,7 +104,7 @@
       <name>correo2</name>
    </variable>
    <variable>
-      <defaultValue>'iperez@firstmajestic.com\r\n'</defaultValue>
+      <defaultValue>'iperez1@firstmajestic.com\r\n'</defaultValue>
       <description></description>
       <id>87b18fe6-1209-4fc9-a07c-22de60035881</id>
       <masked>false</masked>

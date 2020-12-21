@@ -90,7 +90,7 @@
       <name>carg_refinacion</name>
    </variable>
    <variable>
-      <defaultValue>'Dore Oz'</defaultValue>
+      <defaultValue>'D'</defaultValue>
       <description></description>
       <id>89d8a4e4-a391-45d6-b175-da51be56ba76</id>
       <masked>false</masked>
@@ -146,10 +146,24 @@
       <name>correo3</name>
    </variable>
    <variable>
-      <defaultValue>'Dore Oz\'s'</defaultValue>
+      <defaultValue>'E'</defaultValue>
       <description></description>
       <id>a18af34d-79f5-4eb7-90c9-11334e28f1d4</id>
       <masked>false</masked>
       <name>oz_refinar</name>
+   </variable>
+   <variable>
+      <defaultValue>'.5'</defaultValue>
+      <description></description>
+      <id>4d3563ef-074e-42a8-9167-e96231bc8893</id>
+      <masked>false</masked>
+      <name>ajuste_ag</name>
+   </variable>
+   <variable>
+      <defaultValue>'.10'</defaultValue>
+      <description></description>
+      <id>2645a911-4ce1-4feb-8d5c-74d4d14e9fe2</id>
+      <masked>false</masked>
+      <name>ajuste_au</name>
    </variable>
 </TestCaseEntity>

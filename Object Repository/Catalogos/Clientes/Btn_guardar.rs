@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Correo1</name>
+   <name>Btn_guardar</name>
    <tag></tag>
-   <elementGuidId>2f47666a-d752-4553-803f-72d1bbc07d34</elementGuidId>
+   <elementGuidId>d0a5245e-84ee-49bb-93db-6fa488a6b92b</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>/html/body/div[1]/div/main/div/div/div/form/div[6]/div[1]/div/input</value>
+         <value>/html/body/div[1]/div/main/div/div/div/form/div[8]/button[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

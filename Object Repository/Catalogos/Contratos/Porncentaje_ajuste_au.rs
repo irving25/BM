@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Correo1</name>
+   <name>Porncentaje_ajuste_au</name>
    <tag></tag>
-   <elementGuidId>2f47666a-d752-4553-803f-72d1bbc07d34</elementGuidId>
+   <elementGuidId>8f0bd379-dc0a-48b0-9a2c-b57b735a1a8b</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>/html/body/div[1]/div/main/div/div/div/div[2]/div[10]/div[2]/div/input</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>/html/body/div[1]/div/main/div/div/div/form/div[6]/div[1]/div/input</value>
+         <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
